@@ -88,9 +88,10 @@ push_config(){
   cd $config_folder
 
 if [ ! -z "$spoolman_folder" ]; then
-      mkdir -p "$config_folder/spoolman_backup"   # upewniamy się, że katalog istnieje
-      cp -r "$spoolman_folder"/* "$config_folder/spoolman_backup/"
-  fi
+    mkdir -p "$config_folder/spoolman_backup"
+    rsync -a --delete "$spoolman_folder"/ "$config_folder/spoolman_backup"/
+fi
+
   
   git pull origin $branch --no-rebase
   git add .
