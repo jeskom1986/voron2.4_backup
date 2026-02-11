@@ -67,13 +67,12 @@ grab_version(){
     m4="Fluidd version: $fluidd_ver"
   fi
 
+  backup_spoolman() {
   if [ ! -z "$spoolman_folder" ]; then
-    cd "$spoolman_folder"
-    spoolman_commit=$(git rev-parse --short=7 HEAD)
-    m5="Spoolman on commit: $spoolman_commit"
-    cd ..
+    mkdir -p "$config_folder/spoolman_backup"
+    cp -r "$spoolman_folder"/* "$config_folder/spoolman_backup/"
   fi
-
+}
   
 }
 
@@ -84,30 +83,24 @@ grab_version(){
 # git remote set-url origin https://XXXXXXXXXXX@github.com/EricZimmerman/Voron24Configs.git/
 # Note that that format is for changing things after the repository is in use, vs initially
 
-push_config(){
-  cd $config_folder
+push_config() {
+  cd "$config_folder"
+  backup_spoolman
 
-# po tym jak skopiujesz spoolman
-if [ ! -z "$spoolman_folder" ]; then
-    cp -r "$spoolman_folder"/* "$config_folder/spoolman_backup/"
-    git -C "$config_folder" add -f spoolman_backup/*
-fi
+  # Pull z repozytorium
+  git pull origin "$branch" --no-rebase
 
+  # Dodanie wszystkich zmian (w tym spoolman_backup)
+  git add -A
 
-
-
-  
-  git pull origin $branch --no-rebase
-  git add .
+  # Commit z datą i wersjami
   current_date=$(date +"%Y-%m-%d %T")
-  git commit -m "Autocommit from $current_date" -m "$m1" -m "$m2" -m "$m3" -m "$m4"
-  #git commit -m "Autocommit from $current_date" -m "$m1" -m "$m2" -m "$m3" -m "$m4" -m "$m5"
+  git commit -m "Autocommit from $current_date" -m "$m1" -m "$m2" -m "$m3" -m "$m4" 2>/dev/null || true
 
-  #git checkout -b master
-  #git push origin master
-  git push origin $branch
-  #git push origin main
+  # Push na GitHub
+  git push origin "$branch"
 }
+
 
 grab_version
 push_config
