@@ -30,6 +30,9 @@ mainsail_folder=~/mainsail
 ### Path to your Fluidd folder, by default that is '~/fluidd'
 #fluidd_folder=~/fluidd
 
+### Path to your spoolman folder, by default that is '~/spoolman'
+spoolman_folder=~/spoolman
+
 ### The branch of the repository that you want to save your config
 ### By default that is 'main'
 branch=main
@@ -63,6 +66,15 @@ grab_version(){
     fluidd_ver=$(head -n 1 $fluidd_folder/.version)
     m4="Fluidd version: $fluidd_ver"
   fi
+
+  if [ ! -z "$spoolman_folder" ]; then
+    cd "$spoolman_folder"
+    spoolman_commit=$(git rev-parse --short=7 HEAD)
+    m5="Spoolman on commit: $spoolman_commit"
+    cd ..
+  fi
+
+  
 }
 
 # To fully automate this and not have to deal with auth issues, generate a legacy token on Github
@@ -74,10 +86,18 @@ grab_version(){
 
 push_config(){
   cd $config_folder
+
+if [ ! -z "$spoolman_folder" ]; then
+      mkdir -p "$config_folder/spoolman_backup"   # upewniamy się, że katalog istnieje
+      cp -r "$spoolman_folder"/* "$config_folder/spoolman_backup/"
+  fi
+  
   git pull origin $branch --no-rebase
   git add .
   current_date=$(date +"%Y-%m-%d %T")
-  git commit -m "Autocommit from $current_date" -m "$m1" -m "$m2" -m "$m3" -m "$m4"
+  #git commit -m "Autocommit from $current_date" -m "$m1" -m "$m2" -m "$m3" -m "$m4"
+  git commit -m "Autocommit from $current_date" -m "$m1" -m "$m2" -m "$m3" -m "$m4" -m "$m5"
+
   #git checkout -b master
   #git push origin master
   #git push origin $branch
