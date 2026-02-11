@@ -89,7 +89,7 @@ push_config(){
 
 if [ ! -z "$spoolman_folder" ]; then
       mkdir -p "$config_folder/spoolman_backup"
-      rsync -a --delete "$spoolman_folder"/ "$config_folder/spoolman_backup"/
+      cp -r "$spoolman_folder"/. "$config_folder/spoolman_backup/"
   fi
 
   
@@ -101,8 +101,8 @@ if [ ! -z "$spoolman_folder" ]; then
 
   #git checkout -b master
   #git push origin master
-  #git push origin $branch
-  git push origin main
+  git push origin "$branch"
+  #git push origin main
 }
 
 grab_version
