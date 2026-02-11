@@ -87,10 +87,12 @@ grab_version(){
 push_config(){
   cd $config_folder
 
+# po tym jak skopiujesz spoolman
 if [ ! -z "$spoolman_folder" ]; then
-    mkdir -p "$config_folder/spoolman_backup"
-    cp -r "$spoolman_folder"/. "$config_folder/spoolman_backup/"
+    cp -r "$spoolman_folder"/* "$config_folder/spoolman_backup/"
+    git -C "$config_folder" add -f spoolman_backup/*
 fi
+
 
 
 
@@ -98,12 +100,12 @@ fi
   git pull origin $branch --no-rebase
   git add .
   current_date=$(date +"%Y-%m-%d %T")
-  #git commit -m "Autocommit from $current_date" -m "$m1" -m "$m2" -m "$m3" -m "$m4"
-  git commit -m "Autocommit from $current_date" -m "$m1" -m "$m2" -m "$m3" -m "$m4" -m "$m5"
+  git commit -m "Autocommit from $current_date" -m "$m1" -m "$m2" -m "$m3" -m "$m4"
+  #git commit -m "Autocommit from $current_date" -m "$m1" -m "$m2" -m "$m3" -m "$m4" -m "$m5"
 
   #git checkout -b master
   #git push origin master
-  git push origin "$branch"
+  git push origin $branch
   #git push origin main
 }
 

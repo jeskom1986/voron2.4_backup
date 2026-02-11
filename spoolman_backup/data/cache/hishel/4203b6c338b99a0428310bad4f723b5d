@@ -1,0 +1,147 @@
+{
+    "response": {
+        "status": 200,
+        "headers": [
+            [
+                "Connection",
+                "keep-alive"
+            ],
+            [
+                "Server",
+                "GitHub.com"
+            ],
+            [
+                "Content-Type",
+                "application/json; charset=utf-8"
+            ],
+            [
+                "Last-Modified",
+                "Fri, 28 Nov 2025 20:32:18 GMT"
+            ],
+            [
+                "Access-Control-Allow-Origin",
+                "*"
+            ],
+            [
+                "ETag",
+                "W/\"692a06d2-974\""
+            ],
+            [
+                "expires",
+                "Tue, 03 Feb 2026 19:14:17 GMT"
+            ],
+            [
+                "Cache-Control",
+                "max-age=600"
+            ],
+            [
+                "Content-Encoding",
+                "gzip"
+            ],
+            [
+                "x-proxy-cache",
+                "MISS"
+            ],
+            [
+                "X-GitHub-Request-Id",
+                "350E:286231:122E84:125836:698246B1"
+            ],
+            [
+                "Accept-Ranges",
+                "bytes"
+            ],
+            [
+                "Date",
+                "Wed, 11 Feb 2026 22:37:33 GMT"
+            ],
+            [
+                "Via",
+                "1.1 varnish"
+            ],
+            [
+                "Age",
+                "125"
+            ],
+            [
+                "X-Served-By",
+                "cache-vie6324-VIE"
+            ],
+            [
+                "X-Cache",
+                "HIT"
+            ],
+            [
+                "X-Cache-Hits",
+                "1"
+            ],
+            [
+                "X-Timer",
+                "S1770849453.189672,VS0,VE1"
+            ],
+            [
+                "Vary",
+                "Accept-Encoding"
+            ],
+            [
+                "X-Fastly-Request-ID",
+                "8fd18be3fb0ccac20e71c24b6b16db194ad69346"
+            ],
+            [
+                "Expires",
+                "Tue, 03 Feb 2026 19:14:17 GMT"
+            ]
+        ],
+        "content": "H4sIAAAAAAAAA61VTWuDQBC951eIp5SmqWu+bG9q1lTyNURNC6UUjVsQjAZrIVL637sJtLWUSQbsHjw4zNs3O+/NPLYUed6P38NRt2EpiiRM1VtFhZmpdn5Cschek7KSEdbV+7WA2JfFWyyK51JsdzKsM60WjUT8FRhox98fnTO3Xv7vtUPKtablYbdqfUI+cH+C0h4RABZVmmcYwkAnIDip2CdRKpS2D8EFSoYRoCBPq01YRHkmfyptsFG4HgHtPs9jlI5BALCPVBQniUTRhAjY1yf6zG5oEGD5aDUkhBNKoTTnzgVcq6RnWOPGpuSbHpqvDQj5B3XtinxXpSI7qAsQdWldSkfMjSjDVMIs56hKSQ6ez9GyGEWlntgmysu3CR3gCB+9y4YEPFiPHYzQiEIIuKu0g1SOQXwaUEYT8Om0kX+BcxSgR/IMeAEKQClB2h7dKtqwFvizVfrIVmEaZa1Y7tIJPHe5QN+PYpjJivOFz+0ms8+ZmQ+oPSgkgJurWaMyZBOu0NGpUYRUX3Fc6eljVNiM0p3fcIZhooPIoEwiWFvn6LSeWp+0NlJHdAkAAA==",
+        "extensions": {
+            "http_version": "HTTP/1.1",
+            "reason_phrase": "OK"
+        }
+    },
+    "request": {
+        "method": "GET",
+        "url": "https://donkie.github.io/SpoolmanDB/materials.json",
+        "headers": [
+            [
+                "Host",
+                "donkie.github.io"
+            ],
+            [
+                "Accept",
+                "*/*"
+            ],
+            [
+                "Accept-Encoding",
+                "gzip, deflate"
+            ],
+            [
+                "Connection",
+                "keep-alive"
+            ],
+            [
+                "User-Agent",
+                "python-httpx/0.28.1"
+            ],
+            [
+                "If-Modified-Since",
+                "Fri, 28 Nov 2025 20:32:18 GMT"
+            ],
+            [
+                "If-None-Match",
+                "W/\"692a06d2-974\""
+            ]
+        ],
+        "extensions": {
+            "timeout": {
+                "connect": 5.0,
+                "read": 5.0,
+                "write": 5.0,
+                "pool": 5.0
+            }
+        }
+    },
+    "metadata": {
+        "cache_key": "4203b6c338b99a0428310bad4f723b5d",
+        "number_of_uses": 17,
+        "created_at": "Tue, 10 Feb 2026 16:14:47 GMT"
+    }
+}
