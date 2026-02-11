@@ -88,9 +88,13 @@ push_config(){
   cd $config_folder
 
 if [ ! -z "$spoolman_folder" ]; then
-      mkdir -p "$config_folder/spoolman_backup"
-      cp -r "$spoolman_folder"/. "$config_folder/spoolman_backup/"
-  fi
+    # Tworzymy folder docelowy, jeśli nie istnieje
+    mkdir -p "$config_folder/spoolman_backup"
+    
+    # Kopiujemy całą zawartość spoolman do folderu backup w repo
+    cp -r "$spoolman_folder"/. "$config_folder/spoolman_backup/"
+fi
+
 
   
   git pull origin $branch --no-rebase
