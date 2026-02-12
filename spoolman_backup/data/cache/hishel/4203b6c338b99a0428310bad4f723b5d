@@ -28,7 +28,7 @@
             ],
             [
                 "expires",
-                "Tue, 03 Feb 2026 19:14:17 GMT"
+                "Tue, 03 Feb 2026 19:14:19 GMT"
             ],
             [
                 "Cache-Control",
@@ -52,7 +52,7 @@
             ],
             [
                 "Date",
-                "Thu, 12 Feb 2026 16:14:45 GMT"
+                "Thu, 12 Feb 2026 17:14:45 GMT"
             ],
             [
                 "Via",
@@ -60,11 +60,11 @@
             ],
             [
                 "Age",
-                "569"
+                "273"
             ],
             [
                 "X-Served-By",
-                "cache-vie6324-VIE"
+                "cache-fra-eddf8230124-FRA"
             ],
             [
                 "X-Cache",
@@ -72,11 +72,11 @@
             ],
             [
                 "X-Cache-Hits",
-                "5"
+                "2"
             ],
             [
                 "X-Timer",
-                "S1770912886.828921,VS0,VE1"
+                "S1770916486.517526,VS0,VE0"
             ],
             [
                 "Vary",
@@ -84,11 +84,11 @@
             ],
             [
                 "X-Fastly-Request-ID",
-                "3e9541219baca12d22b37ef5a1f871ee108a9d69"
+                "86d7bd735388ae47461c8fc93076001fc342d539"
             ],
             [
                 "Expires",
-                "Tue, 03 Feb 2026 19:14:17 GMT"
+                "Tue, 03 Feb 2026 19:14:19 GMT"
             ]
         ],
         "content": "H4sIAAAAAAAAA61VTWuDQBC951eIp5SmqWu+bG9q1lTyNURNC6UUjVsQjAZrIVL637sJtLWUSQbsHjw4zNs3O+/NPLYUed6P38NRt2EpiiRM1VtFhZmpdn5Cschek7KSEdbV+7WA2JfFWyyK51JsdzKsM60WjUT8FRhox98fnTO3Xv7vtUPKtablYbdqfUI+cH+C0h4RABZVmmcYwkAnIDip2CdRKpS2D8EFSoYRoCBPq01YRHkmfyptsFG4HgHtPs9jlI5BALCPVBQniUTRhAjY1yf6zG5oEGD5aDUkhBNKoTTnzgVcq6RnWOPGpuSbHpqvDQj5B3XtinxXpSI7qAsQdWldSkfMjSjDVMIs56hKSQ6ez9GyGEWlntgmysu3CR3gCB+9y4YEPFiPHYzQiEIIuKu0g1SOQXwaUEYT8Om0kX+BcxSgR/IMeAEKQClB2h7dKtqwFvizVfrIVmEaZa1Y7tIJPHe5QN+PYpjJivOFz+0ms8+ZmQ+oPSgkgJurWaMyZBOu0NGpUYRUX3Fc6eljVNiM0p3fcIZhooPIoEwiWFvn6LSeWp+0NlJHdAkAAA==",
@@ -141,7 +141,7 @@
     },
     "metadata": {
         "cache_key": "4203b6c338b99a0428310bad4f723b5d",
-        "number_of_uses": 18,
+        "number_of_uses": 21,
         "created_at": "Tue, 10 Feb 2026 16:14:47 GMT"
     }
 }

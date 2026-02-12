@@ -56,7 +56,7 @@
             ],
             [
                 "Date",
-                "Thu, 12 Feb 2026 16:14:44 GMT"
+                "Thu, 12 Feb 2026 17:14:44 GMT"
             ],
             [
                 "Via",
@@ -64,11 +64,11 @@
             ],
             [
                 "Age",
-                "263"
+                "250"
             ],
             [
                 "X-Served-By",
-                "cache-fra-eddf8230060-FRA"
+                "cache-fra-eddf8230165-FRA"
             ],
             [
                 "X-Cache",
@@ -76,11 +76,11 @@
             ],
             [
                 "X-Cache-Hits",
-                "1"
+                "2"
             ],
             [
                 "X-Timer",
-                "S1770912885.964569,VS0,VE2"
+                "S1770916485.984351,VS0,VE8"
             ],
             [
                 "Vary",
@@ -88,7 +88,7 @@
             ],
             [
                 "X-Fastly-Request-ID",
-                "8f686e9738b054b15121c2b905009bf7e9f15345"
+                "5f542939511934f9b94031ee9e8e8f38e9834e3c"
             ],
             [
                 "Expires",
@@ -145,7 +145,7 @@
     },
     "metadata": {
         "cache_key": "7092233f1b6dfd51f4c1d26c6e64c49a",
-        "number_of_uses": 18,
+        "number_of_uses": 21,
         "created_at": "Tue, 10 Feb 2026 16:14:47 GMT"
     }
 }
