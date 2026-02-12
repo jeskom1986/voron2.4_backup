@@ -78,11 +78,14 @@ grab_version(){
      }
 
   backup_pi() {
-  if [ ! -z "$pi_folder" ]; then
+  if [ -d "$pi_folder" ]; then
+    echo "Backing up /home/pi ..."
     mkdir -p "$config_folder/pi_backup"
-    cp -r "$pi_folder"/* "$config_folder/pi_backup/"
+    rsync -a --delete "$pi_folder"/ "$config_folder/pi_backup/"
+  else
+    echo "Folder /home/pi not found!"
   fi
-     }
+}
 
      
   
