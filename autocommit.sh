@@ -33,6 +33,9 @@ mainsail_folder=~/mainsail
 ### Path to your spoolman folder, by default that is '~/spoolman'
 spoolman_folder=~/spoolman
 
+### Path to your spoolman folder, by default that is '~/pi'
+pi_folder=~/pi
+
 ### The branch of the repository that you want to save your config
 ### By default that is 'main'
 branch=main
@@ -72,7 +75,16 @@ grab_version(){
     mkdir -p "$config_folder/spoolman_backup"
     cp -r "$spoolman_folder"/* "$config_folder/spoolman_backup/"
   fi
-}
+     }
+
+  backup_pi() {
+  if [ ! -z "$pi_folder" ]; then
+    mkdir -p "$config_folder/pi_backup"
+    cp -r "$pi_folder"/* "$config_folder/pi_backup/"
+  fi
+     }
+
+     
   
 }
 
@@ -86,6 +98,7 @@ grab_version(){
 push_config() {
   cd "$config_folder"
   backup_spoolman
+  backup_pi
 
   # Pull z repozytorium
   git pull origin "$branch" --no-rebase
