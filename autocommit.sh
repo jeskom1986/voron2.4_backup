@@ -98,8 +98,8 @@ push_config() {
   git commit -m "Autocommit from $current_date" -m "$m1" -m "$m2" -m "$m3" -m "$m4" 2>/dev/null || true
 
   # Push na GitHub
-  #git push origin "$branch"
-  git push origin master
+  git push origin "$branch"
+  
 }
 
 
