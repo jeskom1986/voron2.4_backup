@@ -25,3 +25,151 @@
 2026-02-12 00:00:00:INFO:Copied 23 of 24 pages.
 2026-02-12 00:00:00:INFO:Copied 24 of 24 pages.
 2026-02-12 00:00:00:INFO:Backup complete.
+2026-02-12 00:21:28:INFO:Shutting down
+2026-02-12 00:21:28:INFO:Client 172.18.0.1 has stopped listening on pool spool
+2026-02-12 00:21:28:INFO:connection closed
+2026-02-12 00:21:28:INFO:Waiting for application shutdown.
+2026-02-12 00:21:28:INFO:Application shutdown complete.
+2026-02-12 00:21:28:INFO:Finished server process [1]
+2026-02-12 17:14:40:INFO:Starting Spoolman v0.23.1 (commit: eafbc64) (built: 2026-02-03 16:49:40+00:00)
+2026-02-12 17:14:40:INFO:Using data directory: /home/app/.local/share/spoolman
+2026-02-12 17:14:40:INFO:Using logs directory: /home/app/.local/share/spoolman
+2026-02-12 17:14:40:INFO:Using backups directory: /home/app/.local/share/spoolman/backups
+2026-02-12 17:14:40:INFO:Setting up database...
+2026-02-12 17:14:40:INFO:No database type specified, using a default SQLite database located at "/home/app/.local/share/spoolman/spoolman.db"
+2026-02-12 17:14:40:INFO:Performing migrations...
+2026-02-12 17:14:44:INFO:Scheduling automatic database backup for midnight.
+2026-02-12 17:14:44:INFO:Scheduling external DB sync.
+2026-02-12 17:14:44:INFO:Startup complete.
+2026-02-12 17:14:44:INFO:Application startup complete.
+2026-02-12 17:14:44:INFO:Syncing external DB.
+2026-02-12 17:14:44:INFO:Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-02-12 17:14:44:INFO:HTTP Request: GET https://donkie.github.io/SpoolmanDB/filaments.json "HTTP/1.1 200 OK"
+2026-02-12 17:14:45:INFO:172.18.0.1:58666 - "WebSocket /api/v1/spool" [accepted]
+2026-02-12 17:14:45:INFO:Client 172.18.0.1 is now listening on pool spool
+2026-02-12 17:14:45:INFO:connection open
+2026-02-12 17:14:45:INFO:172.18.0.1:58670 - "GET /api/v1/spool/3 HTTP/1.1" 200
+2026-02-12 17:14:45:INFO:HTTP Request: GET https://donkie.github.io/SpoolmanDB/materials.json "HTTP/1.1 200 OK"
+2026-02-12 17:14:46:INFO:External DB synced. Filaments: 6957, Materials: 33
+2026-02-12 17:14:48:INFO:172.18.0.1:36106 - "GET /api/v1/spool?allow_archived=False HTTP/1.1" 200
+2026-02-12 17:16:46:INFO:192.168.1.160:12941 - "GET /favicon.ico HTTP/1.1" 304
+2026-02-12 17:16:46:INFO:192.168.1.160:12941 - "GET /kofi_s_logo_nolabel.png HTTP/1.1" 304
+2026-02-12 17:16:46:INFO:192.168.1.160:12941 - "GET /assets/utc-CiXfA8Ex.js HTTP/1.1" 304
+2026-02-12 17:16:46:INFO:192.168.1.160:5912 - "GET /assets/spoolIcon-CaFR4IZq.css HTTP/1.1" 304
+2026-02-12 17:16:46:INFO:192.168.1.160:4353 - "GET /assets/list-Dj3K7C16.js HTTP/1.1" 304
+2026-02-12 17:16:46:INFO:192.168.1.160:14249 - "GET /assets/column-D-H8r9IW.js HTTP/1.1" 304
+2026-02-12 17:16:46:INFO:192.168.1.160:11848 - "GET /assets/parsing-BKQBUCNT.js HTTP/1.1" 304
+2026-02-12 17:16:46:INFO:192.168.1.160:3513 - "GET /assets/filtering-CY1b-XQk.js HTTP/1.1" 304
+2026-02-12 17:16:46:INFO:192.168.1.160:12941 - "GET /assets/queryFields-D3DLNFIc.js HTTP/1.1" 304
+2026-02-12 17:16:46:INFO:192.168.1.160:5912 - "GET /assets/numberField-RnSuwYlt.js HTTP/1.1" 304
+2026-02-12 17:16:46:INFO:192.168.1.160:4353 - "GET /assets/spoolIcon-DKd3URMe.js HTTP/1.1" 304
+2026-02-12 17:16:46:INFO:192.168.1.160:14249 - "GET /assets/liveify-DeREFN3w.js HTTP/1.1" 304
+2026-02-12 17:16:46:INFO:192.168.1.160:11848 - "GET /assets/otherModels-DxpInbX8.js HTTP/1.1" 304
+2026-02-12 17:16:46:INFO:192.168.1.160:3513 - "GET /assets/saveload-1X65M_tW.js HTTP/1.1" 304
+2026-02-12 17:16:46:INFO:192.168.1.160:12941 - "GET /assets/settings-BS0ciFWM.js HTTP/1.1" 304
+2026-02-12 17:16:46:INFO:192.168.1.160:14249 - "GET /assets/Tree-C7Uj20Jj.js HTTP/1.1" 304
+2026-02-12 17:16:46:INFO:192.168.1.160:5912 - "GET /assets/querySettings-JNLWWCMn.js HTTP/1.1" 304
+2026-02-12 17:16:46:INFO:192.168.1.160:4353 - "GET /assets/Table-CkbZfj_F.js HTTP/1.1" 304
+2026-02-12 17:16:46:INFO:192.168.1.160:11848 - "GET /assets/index-jrOLYYpA.js HTTP/1.1" 304
+2026-02-12 17:16:46:INFO:192.168.1.160:3513 - "GET /assets/SearchOutlined-Nbrd2qqC.js HTTP/1.1" 304
+2026-02-12 17:16:46:INFO:192.168.1.160:12941 - "GET /assets/index-CPw7TJxs.js HTTP/1.1" 304
+2026-02-12 17:16:46:INFO:192.168.1.160:14249 - "GET /assets/useBubbleLock-Coz9GRmL.js HTTP/1.1" 304
+2026-02-12 17:16:46:INFO:192.168.1.160:5912 - "GET /assets/index-BV2BMTs1.js HTTP/1.1" 304
+2026-02-12 17:16:46:INFO:192.168.1.160:3513 - "GET /assets/Pagination-ByQUWoiv.js HTTP/1.1" 304
+2026-02-12 17:16:46:INFO:192.168.1.160:11848 - "GET /assets/zh_CN-cwSELhhy.js HTTP/1.1" 304
+2026-02-12 17:16:46:INFO:192.168.1.160:12941 - "GET /assets/Input-zQ5Cb-kl.js HTTP/1.1" 304
+2026-02-12 17:16:46:INFO:192.168.1.160:4353 - "GET /assets/Pagination-DVl6sdfP.js HTTP/1.1" 304
+2026-02-12 17:16:46:INFO:192.168.1.160:5912 - "GET /api/v1/info HTTP/1.1" 200
+2026-02-12 17:16:46:INFO:192.168.1.160:14249 - "GET /assets/EyeOutlined-BD-WWWS0.js HTTP/1.1" 304
+2026-02-12 17:16:47:INFO:192.168.1.160:3513 - "GET /assets/pl_PL-DUWzeo6A.js HTTP/1.1" 304
+2026-02-12 17:16:47:INFO:192.168.1.160:10547 - "WebSocket /api/v1/filament" [accepted]
+2026-02-12 17:16:47:INFO:Client 192.168.1.160 is now listening on pool filament
+2026-02-12 17:16:47:INFO:connection open
+2026-02-12 17:16:47:INFO:192.168.1.160:5912 - "GET /api/v1/setting/round_prices HTTP/1.1" 200
+2026-02-12 17:16:47:INFO:192.168.1.160:3513 - "GET /api/v1/setting/currency HTTP/1.1" 200
+2026-02-12 17:16:47:INFO:192.168.1.160:14249 - "GET /api/v1/field/filament HTTP/1.1" 200
+2026-02-12 17:16:47:INFO:192.168.1.160:4353 - "GET /api/v1/filament?limit=100&offset=0&sort=id:asc HTTP/1.1" 200
+2026-02-12 17:16:47:INFO:192.168.1.160:4353 - "GET /api/v1/info HTTP/1.1" 200
+2026-02-12 17:16:47:INFO:connection closed
+2026-02-12 17:16:47:INFO:192.168.1.160:4353 - "GET /api/v1/field/filament HTTP/1.1" 200
+2026-02-12 17:16:47:INFO:192.168.1.160:6630 - "WebSocket /api/v1/filament" [accepted]
+2026-02-12 17:16:47:INFO:Client 192.168.1.160 is now listening on pool filament
+2026-02-12 17:16:47:INFO:connection open
+2026-02-12 17:16:47:INFO:192.168.1.160:3513 - "GET /api/v1/setting/round_prices HTTP/1.1" 200
+2026-02-12 17:16:47:INFO:192.168.1.160:14249 - "GET /api/v1/setting/currency HTTP/1.1" 200
+2026-02-12 17:16:47:INFO:192.168.1.160:5912 - "GET /api/v1/filament?limit=100&offset=0&sort=id:asc HTTP/1.1" 200
+2026-02-12 17:16:47:INFO:192.168.1.160:10921 - "WebSocket /api/v1/filament/1" [accepted]
+2026-02-12 17:16:47:INFO:Client 192.168.1.160 is now listening on pool filament,1
+2026-02-12 17:16:47:INFO:connection open
+2026-02-12 17:16:47:INFO:192.168.1.160:7467 - "WebSocket /api/v1/filament/2" [accepted]
+2026-02-12 17:16:47:INFO:Client 192.168.1.160 is now listening on pool filament,2
+2026-02-12 17:16:47:INFO:connection open
+2026-02-12 17:16:47:INFO:192.168.1.160:7428 - "WebSocket /api/v1/filament/3" [accepted]
+2026-02-12 17:16:47:INFO:Client 192.168.1.160 is now listening on pool filament,3
+2026-02-12 17:16:47:INFO:connection open
+2026-02-12 17:16:47:INFO:192.168.1.160:12532 - "WebSocket /api/v1/filament/4" [accepted]
+2026-02-12 17:16:47:INFO:Client 192.168.1.160 is now listening on pool filament,4
+2026-02-12 17:16:47:INFO:connection open
+2026-02-12 17:16:47:INFO:192.168.1.160:14220 - "WebSocket /api/v1/filament/5" [accepted]
+2026-02-12 17:16:47:INFO:Client 192.168.1.160 is now listening on pool filament,5
+2026-02-12 17:16:47:INFO:connection open
+2026-02-12 17:16:47:INFO:192.168.1.160:11407 - "WebSocket /api/v1/filament/6" [accepted]
+2026-02-12 17:16:47:INFO:Client 192.168.1.160 is now listening on pool filament,6
+2026-02-12 17:16:47:INFO:connection open
+2026-02-12 17:16:47:INFO:192.168.1.160:3207 - "WebSocket /api/v1/filament/7" [accepted]
+2026-02-12 17:16:47:INFO:Client 192.168.1.160 is now listening on pool filament,7
+2026-02-12 17:16:47:INFO:connection open
+2026-02-12 17:16:47:INFO:192.168.1.160:8316 - "WebSocket /api/v1/filament/8" [accepted]
+2026-02-12 17:16:47:INFO:Client 192.168.1.160 is now listening on pool filament,8
+2026-02-12 17:16:47:INFO:connection open
+2026-02-12 17:16:47:INFO:Client 192.168.1.160 has stopped listening on pool filament
+2026-02-12 17:16:47:INFO:192.168.1.160:13561 - "WebSocket /api/v1/filament/9" [accepted]
+2026-02-12 17:16:47:INFO:Client 192.168.1.160 is now listening on pool filament,9
+2026-02-12 17:16:47:INFO:connection open
+2026-02-12 17:16:47:INFO:192.168.1.160:7224 - "WebSocket /api/v1/filament/10" [accepted]
+2026-02-12 17:16:47:INFO:Client 192.168.1.160 is now listening on pool filament,10
+2026-02-12 17:16:47:INFO:connection open
+2026-02-12 17:16:47:INFO:192.168.1.160:11080 - "WebSocket /api/v1/filament/11" [accepted]
+2026-02-12 17:16:47:INFO:Client 192.168.1.160 is now listening on pool filament,11
+2026-02-12 17:16:47:INFO:connection open
+2026-02-12 17:16:47:INFO:192.168.1.160:3843 - "WebSocket /api/v1/filament/12" [accepted]
+2026-02-12 17:16:47:INFO:Client 192.168.1.160 is now listening on pool filament,12
+2026-02-12 17:16:47:INFO:connection open
+2026-02-12 17:16:47:INFO:192.168.1.160:1588 - "WebSocket /api/v1/filament/13" [accepted]
+2026-02-12 17:16:47:INFO:Client 192.168.1.160 is now listening on pool filament,13
+2026-02-12 17:16:47:INFO:connection open
+2026-02-12 17:16:47:INFO:192.168.1.160:8534 - "WebSocket /api/v1/filament/14" [accepted]
+2026-02-12 17:16:47:INFO:Client 192.168.1.160 is now listening on pool filament,14
+2026-02-12 17:16:47:INFO:connection open
+2026-02-12 17:16:47:INFO:192.168.1.160:7458 - "WebSocket /api/v1/filament/15" [accepted]
+2026-02-12 17:16:47:INFO:Client 192.168.1.160 is now listening on pool filament,15
+2026-02-12 17:16:47:INFO:connection open
+2026-02-12 17:16:49:INFO:192.168.1.160:10892 - "WebSocket /api/v1/filament/17" [accepted]
+2026-02-12 17:16:49:INFO:Client 192.168.1.160 is now listening on pool filament,17
+2026-02-12 17:16:49:INFO:connection open
+2026-02-12 17:16:49:INFO:192.168.1.160:7323 - "WebSocket /api/v1/filament/16" [accepted]
+2026-02-12 17:16:49:INFO:Client 192.168.1.160 is now listening on pool filament,16
+2026-02-12 17:16:49:INFO:connection open
+2026-02-12 17:16:49:INFO:192.168.1.160:5193 - "WebSocket /api/v1/filament/19" [accepted]
+2026-02-12 17:16:49:INFO:Client 192.168.1.160 is now listening on pool filament,19
+2026-02-12 17:16:49:INFO:connection open
+2026-02-12 17:16:50:INFO:192.168.1.160:6031 - "WebSocket /api/v1/filament/21" [accepted]
+2026-02-12 17:16:50:INFO:Client 192.168.1.160 is now listening on pool filament,21
+2026-02-12 17:16:50:INFO:connection open
+2026-02-12 17:16:51:INFO:192.168.1.160:5587 - "WebSocket /api/v1/filament/20" [accepted]
+2026-02-12 17:16:51:INFO:Client 192.168.1.160 is now listening on pool filament,20
+2026-02-12 17:16:51:INFO:connection open
+2026-02-12 17:16:51:INFO:192.168.1.160:1908 - "WebSocket /api/v1/filament/23" [accepted]
+2026-02-12 17:16:51:INFO:Client 192.168.1.160 is now listening on pool filament,23
+2026-02-12 17:16:51:INFO:connection open
+2026-02-12 17:16:51:INFO:192.168.1.160:9226 - "WebSocket /api/v1/filament/22" [accepted]
+2026-02-12 17:16:51:INFO:Client 192.168.1.160 is now listening on pool filament,22
+2026-02-12 17:16:51:INFO:connection open
+2026-02-12 17:16:51:INFO:192.168.1.160:14854 - "WebSocket /api/v1/filament/18" [accepted]
+2026-02-12 17:16:52:INFO:Client 192.168.1.160 is now listening on pool filament,18
+2026-02-12 17:16:52:INFO:connection open
+2026-02-12 17:16:54:INFO:172.18.0.1:36230 - "GET /api/v1/health HTTP/1.1" 200
+2026-02-12 17:16:54:INFO:172.18.0.1:36232 - "GET /api/v1/info HTTP/1.1" 200
+2026-02-12 17:16:54:INFO:172.18.0.1:36262 - "GET /api/v1/spool HTTP/1.1" 200
+2026-02-12 17:16:54:INFO:172.18.0.1:36246 - "GET /api/v1/vendor HTTP/1.1" 200
+2026-02-12 17:16:55:INFO:172.18.0.1:36266 - "GET /api/v1/spool/3 HTTP/1.1" 200
