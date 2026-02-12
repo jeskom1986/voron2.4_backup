@@ -34,7 +34,7 @@ mainsail_folder=~/mainsail
 spoolman_folder=~/spoolman
 
 ### Path to your spoolman folder, by default that is '~/pi'
-pi_folder=~/pi
+pi_folder=~/home/pi
 
 ### The branch of the repository that you want to save your config
 ### By default that is 'main'
