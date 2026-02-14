@@ -56,7 +56,7 @@
             ],
             [
                 "Date",
-                "Fri, 13 Feb 2026 19:47:58 GMT"
+                "Sat, 14 Feb 2026 14:47:48 GMT"
             ],
             [
                 "Via",
@@ -64,11 +64,11 @@
             ],
             [
                 "Age",
-                "222"
+                "16"
             ],
             [
                 "X-Served-By",
-                "cache-fra-eddf8230184-FRA"
+                "cache-fra-etou8220154-FRA"
             ],
             [
                 "X-Cache",
@@ -80,7 +80,7 @@
             ],
             [
                 "X-Timer",
-                "S1771012079.775462,VS0,VE6"
+                "S1771080468.069887,VS0,VE2"
             ],
             [
                 "Vary",
@@ -88,7 +88,7 @@
             ],
             [
                 "X-Fastly-Request-ID",
-                "1d2b829e552e18dfff57d0211146b0487695f4ff"
+                "40b2e1cb73537dbd78c7f6de7cbbaa76e086df98"
             ],
             [
                 "Expires",
@@ -145,7 +145,7 @@
     },
     "metadata": {
         "cache_key": "7092233f1b6dfd51f4c1d26c6e64c49a",
-        "number_of_uses": 28,
+        "number_of_uses": 34,
         "created_at": "Tue, 10 Feb 2026 16:14:47 GMT"
     }
 }
